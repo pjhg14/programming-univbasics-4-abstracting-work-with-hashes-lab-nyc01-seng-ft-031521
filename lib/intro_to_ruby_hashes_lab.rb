@@ -14,4 +14,6 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   hash.fetch(key) { |k| hash[k] = 0}
   hash[key] += 1
+  
+  hash
 end
